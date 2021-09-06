@@ -2,12 +2,12 @@ import "./App.css";
 import affirmations from "./affirmations";
 import { useState } from "react";
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-
 function App() {
   let [currentAffirmation, setCurrentAffirmation] = useState(null);
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
   function showAffirmation(event) {
     event.preventDefault();
     const numAffirmations = affirmations.length;
