@@ -17,9 +17,11 @@ function App() {
   return (
     <div className="App">
       <h1 className="mt-5">Want to feel better? Press the button!</h1>
-      <button onClick={showAffirmation} className="btn btn-primary mt-5">
+
+      <a href="/" onClick={showAffirmation} className="btn btn-primary mt-5">
         Get Affirmation!
-      </button>
+      </a>
+
       <h2 className="mt-4">{currentAffirmation}</h2>
     </div>
   );

@@ -15,17 +15,18 @@
   );
 }
 
-.App button {
+.App a {
+  background-color: #6cb4ee;
+  color: black;
+}
+.App a:visited {
   background-color: #6cb4ee;
   color: black;
 }
 
-.App button:hover {
+.App a:hover {
   transition: ease-in-out, 0.5s;
-  color: black;
-}
-.App button:focus {
-  background-color: #6cb4ee;
+  background-color: #3486c8;
   color: black;
 }
 
