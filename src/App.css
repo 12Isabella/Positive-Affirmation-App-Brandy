@@ -1,7 +1,30 @@
 .App {
   text-align: center;
-  max-width: 1600 px;
+
   margin: 2% 5%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+
+  background: linear-gradient(
+    0deg,
+    rgba(34, 124, 195, 0.9332107843137255) 0%,
+    rgba(40, 50, 228, 0.47939262472885036) 100%
+  );
+}
+
+.App button {
+  background-color: #6cb4ee;
+  color: black;
+}
+
+.App button:hover {
+  transition: ease-in-out, 0.5s;
+  color: black;
+}
+.App button:focus {
+  background-color: #6cb4ee;
+  color: black;
 }
 
 .App h1,

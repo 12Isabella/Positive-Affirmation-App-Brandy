@@ -20,7 +20,7 @@ function App() {
       <button onClick={showAffirmation} className="btn btn-primary mt-5">
         Get Affirmation!
       </button>
-      <h2 className="mt-3">{currentAffirmation}</h2>
+      <h2 className="mt-4">{currentAffirmation}</h2>
     </div>
   );
 }
