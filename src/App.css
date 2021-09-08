@@ -31,3 +31,7 @@
 h2 {
   font-family: "Dancing Script", cursive;
 }
+
+.App img {
+  border-radius: 15px;
+}
