@@ -25,6 +25,7 @@ function App() {
       </a>
 
       <h2 className="mt-4">{currentAffirmation}</h2>
+      <img className="mt-3" src=" /images/ocean.jpg" alt="/" width="400px" />
     </div>
   );
 }
