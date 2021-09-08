@@ -5,10 +5,12 @@
   padding-top: 20px;
   padding-bottom: 100px;
   border: cornsilk;
-  box-shadow: aqua;
+
   border-radius: 5px;
 
   background-image: url("images/aquarell.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .App a {
