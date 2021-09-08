@@ -1,5 +1,6 @@
 import "./App.css";
 import affirmations from "./affirmations";
+
 import { useState } from "react";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     event.preventDefault();
     const numAffirmations = affirmations.length;
     const index = getRandomInt(numAffirmations);
+
     setCurrentAffirmation(affirmations[index]);
   }
   return (
