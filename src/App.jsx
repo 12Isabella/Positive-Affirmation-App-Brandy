@@ -6,17 +6,32 @@ import { useState } from "react";
 
 function App() {
   let [currentAffirmation, setCurrentAffirmation] = useState(null);
-  let [currentImage, setCurrentImage] = useState(null);
+  let [currentImage, setCurrentImage] = useState(" ./images/ocean.jpg");
+  let [counter, setCounter] = useState(0);
 
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
+  }
+
+  function runCounter() {
+    if (counter < 2) {
+      counter = counter + 1;
+      return counter;
+    } else {
+      counter = 0;
+      return counter;
+    }
   }
   function showAffirmation(event) {
     event.preventDefault();
     const numAffirmations = affirmations.length;
     const index = getRandomInt(numAffirmations);
-    const numImages = listOfImages.length;
-    const imageIndex = getRandomInt(numImages);
+
+    const imageIndex = counter;
+
+    console.log(imageIndex);
+
+    setCounter(runCounter());
 
     setCurrentAffirmation(affirmations[index]);
     setCurrentImage(listOfImages[imageIndex]);
