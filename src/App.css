@@ -12,10 +12,11 @@
   background-repeat: no-repeat;
 }
 
-.App a {
+.App .btn {
   background-color: #6cb4ee;
-  color: black;
+  font-size: 18px;
 }
+
 .App a:visited {
   background-color: #6cb4ee;
   color: black;

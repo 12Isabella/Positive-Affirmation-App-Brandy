@@ -1,10 +1,12 @@
 import "./App.css";
 import affirmations from "./affirmations";
+import listOfImages from "./listOfImages";
 
 import { useState } from "react";
 
 function App() {
   let [currentAffirmation, setCurrentAffirmation] = useState(null);
+  let [currentImage, setCurrentImage] = useState(null);
 
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -13,8 +15,11 @@ function App() {
     event.preventDefault();
     const numAffirmations = affirmations.length;
     const index = getRandomInt(numAffirmations);
+    const numImages = listOfImages.length;
+    const imageIndex = getRandomInt(numImages);
 
     setCurrentAffirmation(affirmations[index]);
+    setCurrentImage(listOfImages[imageIndex]);
   }
   return (
     <div className="App">
@@ -25,7 +30,7 @@ function App() {
       </a>
 
       <h2 className="mt-4">{currentAffirmation}</h2>
-      <img className="mt-3" src=" /images/ocean.jpg" alt="/" width="400px" />
+      <img className="mt-3" src={currentImage} alt="/" width="400px" />
     </div>
   );
 }
