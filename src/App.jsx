@@ -6,15 +6,15 @@ import { useState } from "react";
 
 function App() {
   let [currentAffirmation, setCurrentAffirmation] = useState(null);
-  let [currentImage, setCurrentImage] = useState(" ./images/ocean.jpg");
   let [counter, setCounter] = useState(0);
+  let [backroundImage, setBackgroundImage] = useState("image1");
 
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
   function runCounter() {
-    if (counter < 2) {
+    if (counter < listOfImages.length - 1) {
       counter = counter + 1;
       return counter;
     } else {
@@ -22,6 +22,7 @@ function App() {
       return counter;
     }
   }
+
   function showAffirmation(event) {
     event.preventDefault();
     const numAffirmations = affirmations.length;
@@ -34,18 +35,20 @@ function App() {
     setCounter(runCounter());
 
     setCurrentAffirmation(affirmations[index]);
-    setCurrentImage(listOfImages[imageIndex]);
+
+    setBackgroundImage(`image${imageIndex}`);
   }
   return (
     <div className="App">
-      <h1 className="mt-5">Want to feel better? Press the button!</h1>
+      <div className={backroundImage}>
+        <h1 className="mt-5">Want to feel better? Press the button!</h1>
 
-      <a href="/" onClick={showAffirmation} className="btn btn-primary mt-5">
-        Get Affirmation!
-      </a>
+        <a href="/" onClick={showAffirmation} className="btn btn-primary mt-5">
+          Get Affirmation!
+        </a>
 
-      <h2 className="mt-4">{currentAffirmation}</h2>
-      <img className="mt-3" src={currentImage} alt="/" width="400px" />
+        <h2 className="mt-4">{currentAffirmation}</h2>
+      </div>
     </div>
   );
 }

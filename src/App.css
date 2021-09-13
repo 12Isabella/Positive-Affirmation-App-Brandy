@@ -11,6 +11,26 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.App .image0 {
+  background-image: url("images/aquarell.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.App .image1 {
+  background-image: url("images/ocean.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.App .image2 {
+  background-image: url("images/palms.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
 
 .App .btn {
   background-color: #6cb4ee;
