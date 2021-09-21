@@ -2,34 +2,25 @@
   text-align: center;
 }
 
-.App .image0 {
-  background-image: url("images/aquarell.jpg");
+.App .image {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5px;
   margin: 2% 20%;
   padding-top: 20px;
   padding-bottom: 150px;
+}
+
+.App .image0 {
+  background-image: url("images/aquarell.jpg");
 }
 
 .App .image1 {
   background-image: url("images/ocean.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  margin: 2% 20%;
-  padding-top: 20px;
-  padding-bottom: 150px;
 }
 
 .App .image2 {
   background-image: url("images/palms.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  margin: 2% 20%;
-  padding-top: 20px;
-  padding-bottom: 150px;
 }
 
 .App .btn {

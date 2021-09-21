@@ -40,7 +40,7 @@ function App() {
   }
   return (
     <div className="App">
-      <div className={backroundImage}>
+      <div className={`${backroundImage} image`}>
         <h1 className="mt-5">Want to feel better? Press the button!</h1>
 
         <a href="/" onClick={showAffirmation} className="btn btn-primary mt-5">
